@@ -1,22 +1,116 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="id">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Restoran & Kopi</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/style.css">
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	background: #f5f5f5;
+	color: #333;
+}
+
+/* NAVBAR */
+nav {
+	background: #111;
+	padding: 15px;
+	text-align: center;
+}
+nav h2 {
+	color: white;
+	margin: 0;
+}
+nav ul {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	list-style: none;
+	padding: 0;
+	margin-top: 10px;
+}
+nav a {
+	color: white;
+	text-decoration: none;
+}
+nav a:hover {
+	color: #f39c12;
+}
+
+/* HEADER */
+header {
+	text-align: center;
+	padding: 100px 20px;
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+	url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+	background-size: cover;
+	color: white;
+	border-radius: 0 0 30px 30px;
+}
+
+/* SECTION */
+section {
+	margin: 20px;
+	padding: 30px;
+	background: white;
+	border-radius: 20px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* MENU CARD */
+.menu {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.card {
+	background: #fff;
+	padding: 20px;
+	border-radius: 15px;
+	width: 200px;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	transition: 0.3s;
+}
+.card:hover {
+	transform: scale(1.05);
+}
+
+/* BUTTON */
+button {
+	background: #f39c12;
+	border: none;
+	padding: 10px 20px;
+	color: white;
+	border-radius: 20px;
+	cursor: pointer;
+}
+button:hover {
+	background: #d35400;
+}
+
+/* FOOTER */
+footer {
+	text-align: center;
+	padding: 20px;
+	background: #222;
+	color: white;
+	margin-top: 20px;
+	border-top: 3px solid #f39c12;
+}
+</style>
 
 </head>
 <body>
 
-<div id="page">
-
 <!-- NAVBAR -->
 <nav>
-	<h2 style="text-align:center;">Tasty.</h2>
-	<ul style="display:flex; justify-content:center; gap:20px; list-style:none;">
+	<h2>Tasty.</h2>
+	<ul>
 		<li><a href="#">Beranda</a></li>
 		<li><a href="#">Menu</a></li>
 		<li><a href="#">Galeri</a></li>
@@ -27,44 +121,61 @@
 </nav>
 
 <!-- HEADER -->
-<header style="text-align:center; padding:50px; background:#eee;">
-	<h1>Restoran & Kopi Terbaik</h1>
+<header>
+	<h1>☕ Restoran & Kopi Terbaik</h1>
 	<p>Tempat nyaman untuk makan dan bersantai bersama teman & keluarga</p>
 </header>
 
 <!-- ABOUT -->
-<section style="padding:40px;">
-	<h2>Tentang Restoran</h2>
+<section>
+	<h2>📖 Tentang Restoran</h2>
 	<p>Restoran ini menyediakan berbagai makanan dan minuman dengan kualitas terbaik. Kami berkomitmen memberikan pelayanan yang nyaman dan ramah.</p>
 </section>
 
 <!-- MENU -->
-<section style="padding:40px; background:#f9f9f9;">
-	<h2>Menu Hari Ini</h2>
-	<ul>
-		<li>Pizza Kentang - Rp30.000</li>
-		<li>Ayam Goreng - Rp25.000</li>
-		<li>Jamur Saus - Rp20.000</li>
-		<li>Kentang Goreng - Rp18.000</li>
-	</ul>
+<section>
+	<h2>🍽️ Menu Hari Ini</h2>
+	<div class="menu">
+
+		<div class="card">
+			<h3>Pizza Kentang</h3>
+			<p>Rp30.000</p>
+		</div>
+
+		<div class="card">
+			<h3>Ayam Goreng</h3>
+			<p>Rp25.000</p>
+		</div>
+
+		<div class="card">
+			<h3>Jamur Saus</h3>
+			<p>Rp20.000</p>
+		</div>
+
+		<div class="card">
+			<h3>Kentang Goreng</h3>
+			<p>Rp18.000</p>
+		</div>
+
+	</div>
 </section>
 
 <!-- TESTIMONI -->
-<section style="padding:40px;">
-	<h2>Testimoni</h2>
+<section>
+	<h2>💬 Testimoni</h2>
 	<p>"Makanannya enak dan tempatnya nyaman banget!"</p>
 </section>
 
 <!-- BOOKING -->
-<section style="padding:40px; background:#eee; text-align:center;">
-	<h2>Pesan Meja</h2>
+<section style="text-align:center;">
+	<h2>📅 Pesan Meja</h2>
 	<p>Silakan reservasi untuk pengalaman terbaik</p>
 	<button>Pesan Sekarang</button>
 </section>
 
 <!-- MAP -->
-<section style="padding:40px;">
-	<h2>Lokasi Sekolah</h2>
+<section>
+	<h2>📍 Lokasi Sekolah</h2>
 	<p>SMA Negeri 8 Yogyakarta</p>
 	<iframe 
 		src="https://www.google.com/maps?q=SMA+Negeri+8+Yogyakarta&output=embed"
@@ -73,11 +184,9 @@
 </section>
 
 <!-- FOOTER -->
-<footer style="text-align:center; padding:20px; background:#222; color:white;">
+<footer>
 	<p>© 2026 Website Tugas Sekolah</p>
 </footer>
-
-</div>
 
 </body>
 </html>
