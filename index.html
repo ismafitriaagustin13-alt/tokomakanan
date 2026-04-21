@@ -5,10 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Restoran & Kopi</title>
 
-<!-- FONT -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
@@ -20,10 +23,13 @@ body {
 nav {
 	background: #111;
 	padding: 15px;
-	text-align: center;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
 }
 nav h2 {
 	color: white;
+	text-align: center;
 	margin: 0;
 }
 nav ul {
@@ -62,7 +68,7 @@ section {
 	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* MENU CARD */
+/* MENU */
 .menu {
 	display: flex;
 	gap: 20px;
@@ -103,37 +109,35 @@ footer {
 	border-top: 3px solid #f39c12;
 }
 </style>
-
 </head>
+
 <body>
 
 <!-- NAVBAR -->
 <nav>
 	<h2>Tasty.</h2>
 	<ul>
-		<li><a href="#">Beranda</a></li>
-		<li><a href="#">Menu</a></li>
-		<li><a href="#">Galeri</a></li>
-		<li><a href="#">Reservasi</a></li>
-		<li><a href="#">Tentang</a></li>
-		<li><a href="#">Kontak</a></li>
+		<li><a href="#beranda">Beranda</a></li>
+		<li><a href="#menu">Menu</a></li>
+		<li><a href="#tentang">Tentang</a></li>
+		<li><a href="#kontak">Kontak</a></li>
 	</ul>
 </nav>
 
 <!-- HEADER -->
-<header>
+<header id="beranda">
 	<h1>☕ Restoran & Kopi Terbaik</h1>
 	<p>Tempat nyaman untuk makan dan bersantai bersama teman & keluarga</p>
 </header>
 
 <!-- ABOUT -->
-<section>
+<section id="tentang">
 	<h2>📖 Tentang Restoran</h2>
 	<p>Restoran ini menyediakan berbagai makanan dan minuman dengan kualitas terbaik. Kami berkomitmen memberikan pelayanan yang nyaman dan ramah.</p>
 </section>
 
 <!-- MENU -->
-<section>
+<section id="menu">
 	<h2>🍽️ Menu Hari Ini</h2>
 	<div class="menu">
 
@@ -160,32 +164,26 @@ footer {
 	</div>
 </section>
 
-<!-- TESTIMONI -->
-<section>
-	<h2>💬 Testimoni</h2>
-	<p>"Makanannya enak dan tempatnya nyaman banget!"</p>
-</section>
+<!-- KONTAK + MAP -->
+<section id="kontak">
+	<h2>📍 Kontak & Lokasi</h2>
 
-<!-- BOOKING -->
-<section style="text-align:center;">
-	<h2>📅 Pesan Meja</h2>
-	<p>Silakan reservasi untuk pengalaman terbaik</p>
-	<button>Pesan Sekarang</button>
-</section>
+	<p>🏫 SMA Negeri 8 Yogyakarta</p>
 
-<!-- MAP -->
-<section>
-	<h2>📍 Lokasi Sekolah</h2>
-	<p>SMA Negeri 8 Yogyakarta</p>
+	<p>📞 <a href="tel:+6285860240223">+62 858-6024-0223</a></p>
+
+	<p>📧 <a href="mailto:ismaagustin353@gmail.com">ismaagustin353@gmail.com</a></p>
+
 	<iframe 
 		src="https://www.google.com/maps?q=SMA+Negeri+8+Yogyakarta&output=embed"
 		width="100%" height="250" style="border:0;">
 	</iframe>
 </section>
+</section>
 
 <!-- FOOTER -->
 <footer>
-	<p>© 2026 Website Tugas Sekolah</p>
+	<p>© 2026 Website Isma</p>
 </footer>
 
 </body>
