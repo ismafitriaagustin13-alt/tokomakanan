@@ -15,32 +15,33 @@ html {
 body {
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
-	background: #f7f3ef;
-	color: #333;
+	background: linear-gradient(to bottom, #fdf6f0, #f3e5d8);
+	color: #5c4a3d;
 }
 
 /* NAV */
 nav {
-	background: #6b4f4f;
+	background: #8b6f5c;
 	padding: 15px;
 	text-align: center;
 	position: sticky;
 	top: 0;
 }
 nav a {
-	color: white;
+	color: #fffaf5;
 	margin: 0 15px;
 	text-decoration: none;
+	font-weight: 500;
 }
 nav a:hover {
-	color: #ffd166;
+	color: #ffd9b3;
 }
 
 /* HEADER */
 header {
 	text-align: center;
 	padding: 100px 20px;
-	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+	background: linear-gradient(rgba(139,111,92,0.6), rgba(139,111,92,0.6)),
 	url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
 	background-size: cover;
 	color: white;
@@ -51,9 +52,10 @@ header {
 section {
 	margin: 20px;
 	padding: 30px;
-	background: white;
+	background: #fffaf5;
 	border-radius: 20px;
 	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+	border-left: 6px solid #c89f7a;
 }
 
 /* MENU */
@@ -65,15 +67,17 @@ section {
 }
 .card {
 	width: 220px;
-	background: #fff;
+	background: #fffaf5;
 	border-radius: 15px;
 	box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 	overflow: hidden;
 	text-align: center;
 	transition: 0.3s;
+	border: 1px solid #e6d3c3;
 }
 .card:hover {
 	transform: scale(1.05);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 .card img {
 	width: 100%;
@@ -87,7 +91,7 @@ section {
 /* BUTTON WA */
 .btn {
 	display: inline-block;
-	background: #25D366;
+	background: #c89f7a;
 	color: white;
 	padding: 10px 20px;
 	border-radius: 25px;
@@ -95,14 +99,14 @@ section {
 	margin-top: 10px;
 }
 .btn:hover {
-	background: #1ebe5d;
+	background: #a67c52;
 }
 
 /* FOOTER */
 footer {
 	text-align: center;
 	padding: 20px;
-	background: #6b4f4f;
+	background: #8b6f5c;
 	color: white;
 }
 </style>
@@ -122,16 +126,16 @@ footer {
 <!-- HEADER -->
 <header id="beranda">
 	<h1>🍟 Warung Nongki</h1>
-	<p>Tempat santai buat makan & ngobrol bareng teman</p>
+	<p>Tempat santai dengan rasa yang bikin nagih 🤎</p>
 </header>
 
 <!-- TENTANG -->
 <section id="tentang">
 	<h2>📖 Tentang Kami</h2>
 	<p>
-	Warung Nongki adalah tempat makan sederhana dengan suasana santai dan nyaman. 
-	Kami menyediakan berbagai camilan favorit seperti kentang goreng, pizza, dan jamur crispy dengan harga terjangkau. 
-	Cocok untuk kamu yang ingin nongkrong santai sambil menikmati makanan enak bersama teman.
+	Warung Nongki adalah tempat makan sederhana dengan suasana hangat dan nyaman. 
+	Kami menyediakan berbagai camilan favorit seperti kentang goreng, pizza, dan jamur crispy 
+	dengan harga terjangkau. Cocok untuk kamu yang ingin nongkrong santai bersama teman.
 	</p>
 </section>
 
@@ -141,28 +145,28 @@ footer {
 	<div class="menu">
 
 		<div class="card">
-	<img src="ayam-goreng.jpeg">
-	<h3>Ayam Goreng</h3>
-	<p>Rp25.000</p>
-</div>
+			<img src="images/ayam-goreng.jpeg">
+			<h3>Ayam Goreng</h3>
+			<p>Rp25.000</p>
+		</div>
 
-<div class="card">
-	<img src="kentang-goreng.jpeg">
-	<h3>Kentang Goreng</h3>
-	<p>Rp18.000</p>
-</div>
+		<div class="card">
+			<img src="images/kentang-goreng.jpeg">
+			<h3>Kentang Goreng</h3>
+			<p>Rp18.000</p>
+		</div>
 
-<div class="card">
-	<img src="pizza.jpeg">
-	<h3>Pizza</h3>
-	<p>Rp30.000</p>
-</div>
+		<div class="card">
+			<img src="images/pizza.jpeg">
+			<h3>Pizza</h3>
+			<p>Rp30.000</p>
+		</div>
 
-<div class="card">
-	<img src="jamur-goreng.jpeg">
-	<h3>Jamur Crispy</h3>
-	<p>Rp20.000</p>
-</div>
+		<div class="card">
+			<img src="images/jamur-goreng.jpeg">
+			<h3>Jamur Crispy</h3>
+			<p>Rp20.000</p>
+		</div>
 
 	</div>
 </section>
@@ -171,7 +175,7 @@ footer {
 <section id="kontak">
 	<h2>📍 Kontak & Lokasi</h2>
 
-	<p>📱 
+	<p>
 		<a class="btn" href="https://wa.me/6285860240223" target="_blank">
 		Chat WhatsApp
 		</a>
@@ -189,7 +193,7 @@ footer {
 
 <!-- FOOTER -->
 <footer>
-	<p>© 2026 Warung Nongki | Tugas Sekolah</p>
+	<p>© 2026 Warung Nongki</p>
 </footer>
 
 </body>
