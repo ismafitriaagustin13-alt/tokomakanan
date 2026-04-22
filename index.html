@@ -8,7 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-<style>
 html {
 	scroll-behavior: smooth;
 }
@@ -27,12 +26,16 @@ nav {
 	text-align: center;
 	position: sticky;
 	top: 0;
+	z-index: 1000;
 }
+
 nav a {
 	color: #fffaf5;
 	margin: 0 15px;
 	text-decoration: none;
+	font-weight: 500;
 }
+
 nav a:hover {
 	color: #ffd9b3;
 }
@@ -45,7 +48,6 @@ header {
 	url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
 	background-size: cover;
 	color: white;
-	border-radius: 0 0 30px 30px;
 }
 
 /* SECTION */
@@ -55,7 +57,7 @@ section {
 	background: #fffaf5;
 	border-radius: 20px;
 	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-	border-left: 6px solid #c89f7a;
+	scroll-margin-top: 80px;
 }
 
 /* MENU */
@@ -75,22 +77,17 @@ section {
 	overflow: hidden;
 	text-align: center;
 	transition: 0.3s;
-	border: 1px solid #e6d3c3;
 }
 .card:hover {
 	transform: scale(1.05);
-	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 .card img {
 	width: 100%;
 	height: 140px;
 	object-fit: cover;
 }
-.card h3 {
-	margin: 10px 0 5px;
-}
 
-/* BUTTON WA */
+/* BUTTON */
 .btn {
 	display: inline-block;
 	background: #c89f7a;
@@ -98,10 +95,6 @@ section {
 	padding: 10px 20px;
 	border-radius: 25px;
 	text-decoration: none;
-	margin-top: 10px;
-}
-.btn:hover {
-	background: #a67c52;
 }
 
 /* FOOTER */
@@ -112,26 +105,30 @@ footer {
 	color: white;
 }
 </style>
-<!-- HEADER -->
-<header id="beranda">
-	<h1> Warung Nongki</h1>
-	<p style="font-size:16px; opacity:0.9;">
-	Nongkrong santai, makan enak, harga ramah kantong 🤎
-</p>
+</head>
 
+<body>
+
+<!-- NAV -->
+<nav>
+	<a href="#beranda">Beranda</a>
+	<a href="#tentang">Tentang</a>
+	<a href="#menu">Menu</a>
+	<a href="#kontak">Kontak</a>
+</nav>
+
+<!-- BERANDA -->
+<header id="beranda">
+	<h1>Warung Nongki</h1>
+	<p>Nongkrong santai, makan enak 🤎</p>
 </header>
 
 <!-- TENTANG -->
 <section id="tentang">
 	<h2>📖 Tentang Kami</h2>
 	<p>
-	Warung Nongki adalah tempat makan sederhana dengan suasana santai dan nyaman. 
-	Kami menyediakan berbagai camilan favorit seperti kentang goreng, pizza, dan jamur crispy dengan harga terjangkau. 
-	Cocok untuk kamu yang ingin nongkrong santai sambil menikmati makanan enak bersama teman.
+	Warung Nongki adalah tempat makan sederhana dengan suasana santai dan nyaman.
 	</p>
-	<p style="font-style: italic; text-align:center;">
-	“Tempat sederhana, rasa istimewa 🤎”
-</p>
 </section>
 
 <!-- MENU -->
@@ -157,39 +154,29 @@ footer {
 			<p>Rp30.000</p>
 		</div>
 
-		<div class="card">
-			<img src="jamur-goreng.jpeg">
-			<h3>Jamur Crispy</h3>
-			<p>Rp20.000</p>
-		</div>
-
 	</div>
 </section>
 
 <!-- KONTAK -->
 <section id="kontak">
-	<h2>📍 Kontak & Lokasi</h2>
+	<h2>📍 Kontak</h2>
 
-	<p>📱 
-		<a class="btn" href="https://wa.me/6285860240223" target="_blank">
-		Chat WhatsApp
-		</a>
-		<p>📲 Hubungi kami via WhatsApp untuk order cepat!</p>
-	</p>
+	<a class="btn" href="https://wa.me/6285860240223" target="_blank">
+	Chat WhatsApp
+	</a>
 
-	<p>🏫 Lokasi: SMA Negeri 8 Yogyakarta</p>
+	<p>📲 Hubungi kami untuk order</p>
+
+	<p>🏫 SMA Negeri 8 Yogyakarta</p>
 
 	<iframe 
 		src="https://maps.google.com/maps?q=SMA%20Negeri%208%20Yogyakarta&output=embed"
-		width="100%" 
-		height="250" 
-		style="border:0;">
+		width="100%" height="250" style="border:0;">
 	</iframe>
 </section>
 
-<!-- FOOTER -->
 <footer>
-	<p>© 2026 Warung Nongki | Tugas Sekolah</p>
+	<p>© 2026 Warung Nongki</p>
 </footer>
 
 </body>
